@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Movies from "./components/Movies";
 
 function RootLayout() {
   return (
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/movies",
-        element: <div className="p-10 text-2xl font-bold">🎬 Movie Listing Page (Coming up next!)</div>,
+        element: <Movies />,
       },
     ],
   },
